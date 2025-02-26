@@ -21,5 +21,28 @@
     >
       hola
     </p>
+
+    <!-- Caso base -->
+    <div style="width: 200px; background-color: pink">Lorem ipsum dolor</div>
+
+    <!-- Problema: Borde afecta ancho total -->
+    <div
+      style="width: 200px; background-color: salmon; border: 25px solid green"
+    >
+      Lorem ipsum dolor
+    </div>
+
+    <!-- Solución: box-sizing -->
+    <div
+      style="
+        width: 200px;
+        background-color: salmon;
+        border: 25px solid green;
+        box-sizing: border-box;
+      "
+    >
+      Lorem ipsum dolor
+    </div>
+    
   </body>
 </html>
