@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>inline-block</title>
+    <meta name="robots" content="noindex, follow" />
+    <title>inline-block con mejoras</title>
   </head>
   <body>
     <!-- div con imagen de fondo que ocupe todo el espacio, la imagen no se repetirá -->
@@ -16,25 +17,120 @@
         background-repeat: no-repeat;
       "
     >
-      <!-- 3 parrafos en inline block uno al lado del otro que no se salgan del div -->
-      <p style="display: inline-block; width: 200px; padding: 25px">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur omnis
-        odit deleniti amet, ducimus suscipit dolorem dolor facere, odio possimus
-        iusto inventore quod eaque ipsam molestiae. Quis, provident. Quam,
-        aliquid?
-      </p>
-      <p style="display: inline-block; width: 200px; padding: 25px">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur omnis
-        odit deleniti amet, ducimus suscipit dolorem dolor facere, odio possimus
-        iusto inventore quod eaque ipsam molestiae. Quis, provident. Quam,
-        aliquid?
-      </p>
-      <p style="display: inline-block; width: 200px; padding: 25px">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur omnis
-        odit deleniti amet, ducimus suscipit dolorem dolor facere, odio possimus
-        iusto inventore quod eaque ipsam molestiae. Quis, provident. Quam,
-        aliquid?
-      </p>
+      <!-- 3 párrafos en inline-block, uno al lado del otro -->
+      <div
+        style="
+          width: 250px;
+          padding: 25px;
+          box-sizing: border-box;
+          display: inline-block;
+          vertical-align: top;
+        "
+      >
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+          omnis odit deleniti amet, ducimus suscipit dolorem dolor facere, odio
+          possimus iusto inventore quod eaque ipsam molestiae. Quis, provident.
+          Quam, aliquid?
+        </p>
+      </div>
+      <div
+        style="
+          width: 250px;
+          padding: 25px;
+          box-sizing: border-box;
+          display: inline-block;
+          vertical-align: top;
+        "
+      >
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+          omnis odit deleniti amet, ducimus suscipit dolorem dolor facere, odio
+          possimus iusto inventore quod eaque ipsam molestiae. Quis, provident.
+          Quam, aliquid?
+        </p>
+      </div>
+      <div
+        style="
+          width: 250px;
+          padding: 25px;
+          box-sizing: border-box;
+          display: inline-block;
+          vertical-align: top;
+        "
+      >
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+          omnis odit deleniti amet, ducimus suscipit dolorem dolor facere, odio
+          possimus iusto inventore quod eaque ipsam molestiae. Quis, provident.
+          Quam, aliquid?
+        </p>
+      </div>
+    </div>
+
+    <!-- salto de linea -->
+    <br /><br />
+
+    <!-- ejemplo con float left -->
+    <!-- div con imagen de fondo que ocupe todo el espacio, la imagen no se repetirá -->
+    <div
+      style="
+        background-image: url('https://pablomonteserin.com/wp-content/uploads/2020/05/bg-2.jpg');
+        width: 1000px;
+        height: 1000px;
+        margin: auto;
+        background-repeat: no-repeat;
+      "
+    >
+      <!-- 3 párrafos en inline-block, uno al lado del otro -->
+      <div
+        style="
+          width: 250px;
+          padding: 25px;
+          box-sizing: border-box;
+          float: left;
+          vertical-align: top;
+        "
+      >
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+          omnis odit deleniti amet, ducimus suscipit dolorem dolor facere, odio
+          possimus iusto inventore quod eaque ipsam molestiae. Quis, provident.
+          Quam, aliquid?
+        </p>
+      </div>
+      <div
+        style="
+          width: 250px;
+          padding: 25px;
+          box-sizing: border-box;
+          float: left;
+          vertical-align: top;
+        "
+      >
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+          omnis odit deleniti amet, ducimus suscipit dolorem dolor facere, odio
+          possimus iusto inventore quod eaque ipsam molestiae. Quis, provident.
+          Quam, aliquid?
+        </p>
+      </div>
+      <div
+        style="
+          width: 250px;
+          padding: 25px;
+          box-sizing: border-box;
+          float: left;
+          vertical-align: top;
+        "
+      >
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+          omnis odit deleniti amet, ducimus suscipit dolorem dolor facere, odio
+          possimus iusto inventore quod eaque ipsam molestiae. Quis, provident.
+          Quam, aliquid?
+        </p>
+      </div>
     </div>
   </body>
 </html>
