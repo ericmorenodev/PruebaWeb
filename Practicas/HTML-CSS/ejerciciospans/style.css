@@ -17,10 +17,10 @@ h1 {
 }
 
 .articulo {
-  width: 70%;
+  width: 50%;
+  text-align: justify;
   margin: 0 auto;
   padding: 50px;
-  text-align: center;
   border-bottom: black 3px solid;
 }
 
@@ -29,10 +29,17 @@ h1 {
   font-size: 2rem;
   color: #000;
   margin: 0;
+  text-align: center;
   border-bottom: white 5px solid;
 }
 
 /* fecha centrada con fondo gris y letras blancas */
+.fecha {
+  margin: auto;
+  text-align: center;
+  padding-top: 2%;
+}
+
 .fecha span {
   background-color: #4e4e4e;
   color: #fff;
