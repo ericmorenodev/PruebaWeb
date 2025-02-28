@@ -1,0 +1,64 @@
+body {
+  background-color: #fbc79f;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.box {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.box p {
+  margin: 0;
+}
+
+/* Paleta de colores (fondo y color de borde) */
+.box.color-yellow {
+  background-color: #ffffb5;
+  border-color: #ffff00;
+  /* Borde amarillo */
+}
+
+.box.color-purple {
+  background-color: #dfdaf2;
+  border-color: #a89bdb;
+  /* Borde morado */
+}
+
+.box.color-green {
+  background-color: #8ad0c0;
+  border-color: #65988c;
+  /* Borde verde */
+}
+
+.box.color-gray {
+  background-color: #e0e0e0;
+  border-color: #848484;
+  /* Borde gris */
+}
+
+/* Estilos de borde */
+.border-solid {
+  border: 5px solid;
+}
+
+.border-dashed {
+  border: 5px dashed;
+}
+
+.border-dotted {
+  border: 5px dotted;
+}
+
+.border-double {
+  border: 5px double;
+}
