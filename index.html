@@ -5,189 +5,243 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Hub de Ejercicios</title>
   </head>
-  <body>
-    <!-- ========== ENCABEZADO PRINCIPAL ========== -->
+  <body
+    style="
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    "
+  >
+    <!-- ========== ENCABEZADO ========== -->
     <div
       style="
         background-color: #4caf50;
         padding: 15px;
         border-radius: 10px;
         text-align: center;
+        margin: 20px;
       "
     >
-      <!-- border radius redondea los bordes del div -->
       <h1 style="color: white; margin: 0">🏋️ Mis Ejercicios HTML</h1>
     </div>
 
     <!-- ========== CONTENIDO PRINCIPAL ========== -->
-    <div style="margin: 30px 0">
-      <h2 style="color: #2c3e50">🚀 Ejercicios Disponibles:</h2>
+    <div style="flex: 1; padding: 0 20px">
+      <div style="max-width: 1000px; margin: 0 auto">
+        <h2 style="color: #2c3e50; margin-top: 0">
+          🚀 Ejercicios Disponibles:
+        </h2>
 
-      <!-- Tabla de ejercicios - 2 columnas -->
-      <table
-        style="width: 100%; border-collapse: collapse; table-layout: fixed"
-      >
-        <!-- Fila 1 - Botones azul y naranja -->
-        <tr>
-          <td style="width: 50%; padding: 10px">
-            <form action="./Practicas/listas.html">
-              <button
-                type="submit"
-                style="
-                  background-color: #3498db;
-                  color: white;
-                  padding: 12px;
-                  border: none;
-                  border-radius: 5px;
-                  cursor: pointer;
-                  width: 100%;
-                  font-size: 16px;
-                "
-              >
-                📋 Práctica de Listas
-              </button>
-            </form>
-          </td>
-          <td style="width: 50%; padding: 10px">
-            <form action="./Practicas/PruebaMetalinks.html">
-              <button
-                type="submit"
-                style="
-                  background-color: #e67e22;
-                  color: white;
-                  padding: 12px;
-                  border: none;
-                  border-radius: 5px;
-                  cursor: pointer;
-                  width: 100%;
-                  font-size: 16px;
-                "
-              >
-                🔗 Práctica de Enlaces
-              </button>
-            </form>
-          </td>
-        </tr>
+        <!-- Tabla de ejercicios -->
+        <table
+          style="width: 100%; border-collapse: collapse; table-layout: fixed"
+        >
+          <!-- Fila 1 - Fundamentos -->
+          <tr>
+            <td style="padding: 10px">
+              <form action="./Practicas/HTML/listas.html">
+                <button
+                  type="submit"
+                  style="
+                    background-color: #3498db;
+                    color: white;
+                    padding: 12px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    width: 100%;
+                    font-size: 16px;
+                  "
+                >
+                  📋 Listas
+                </button>
+              </form>
+            </td>
+            <td style="padding: 10px">
+              <form action="./Practicas/HTML/PruebaMetalinks.html">
+                <button
+                  type="submit"
+                  style="
+                    background-color: #e67e22;
+                    color: white;
+                    padding: 12px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    width: 100%;
+                    font-size: 16px;
+                  "
+                >
+                  🔗 Enlaces
+                </button>
+              </form>
+            </td>
+          </tr>
 
-        <!-- Fila 2 - Botones morado y rojo -->
-        <tr>
-          <td style="padding: 10px">
-            <form action="./Practicas/tablas.html">
-              <button
-                type="submit"
-                style="
-                  background-color: #9b59b6;
-                  color: white;
-                  padding: 12px;
-                  border: none;
-                  border-radius: 5px;
-                  cursor: pointer;
-                  width: 100%;
-                  font-size: 16px;
-                "
-              >
-                📊 Práctica de Tablas
-              </button>
-            </form>
-          </td>
-          <td style="padding: 10px">
-            <form action="./Practicas/estiloshtmlsimple.html">
-              <button
-                type="submit"
-                style="
-                  background-color: #e74c3c;
-                  color: white;
-                  padding: 12px;
-                  border: none;
-                  border-radius: 5px;
-                  cursor: pointer;
-                  width: 100%;
-                  font-size: 16px;
-                "
-              >
-                🎨 Práctica de Estilos
-              </button>
-            </form>
-          </td>
-        </tr>
+          <!-- Fila 2 - Estructuras -->
+          <tr>
+            <td style="padding: 10px">
+              <form action="./Practicas/HTML/tablas.html">
+                <button
+                  type="submit"
+                  style="
+                    background-color: #9b59b6;
+                    color: white;
+                    padding: 12px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    width: 100%;
+                    font-size: 16px;
+                  "
+                >
+                  📊 Tablas
+                </button>
+              </form>
+            </td>
+            <td style="padding: 10px">
+              <form action="./Practicas/HTML/estiloshtmlsimple.html">
+                <button
+                  type="submit"
+                  style="
+                    background-color: #e74c3c;
+                    color: white;
+                    padding: 12px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    width: 100%;
+                    font-size: 16px;
+                  "
+                >
+                  🎨 Estilos
+                </button>
+              </form>
+            </td>
+          </tr>
 
-        <!-- Fila 3 - Botón verde y área reservada -->
-        <tr>
-          <td style="padding: 10px">
-            <form action="./Practicas/iframes.html">
-              <button
-                type="submit"
-                style="
-                  background-color: #2ecc71;
-                  color: white;
-                  padding: 12px;
-                  border: none;
-                  border-radius: 5px;
-                  cursor: pointer;
-                  width: 100%;
-                  font-size: 16px;
-                "
-              >
-                🖼️ Práctica de Iframes
-              </button>
-            </form>
-          </td>
-          <td style="padding: 10px">
-            <form action="./Practicas/practicadisplayinline.html">
-              <button
-                type="submit"
-                style="
-                  background-color: #2ecc71;
-                  color: white;
-                  padding: 12px;
-                  border: none;
-                  border-radius: 5px;
-                  cursor: pointer;
-                  width: 100%;
-                  font-size: 16px;
-                "
-              >
-                Práctica de display inline block
-              </button>
-            </form>
-          </td>
-        </tr>
-        <!-- Fila 4 - Botón verde y área reservada -->
-        <tr>
-          <td style="padding: 10px">
-            <form action="./Practicas/maquetación.html">
-              <button
-                type="submit"
-                style="
-                  background-color: pink;
-                  color: white;
-                  padding: 12px;
-                  border: none;
-                  border-radius: 5px;
-                  cursor: pointer;
-                  width: 100%;
-                  font-size: 16px;
-                "
-              >
-                Práctica de maquetación
-              </button>
-            </form>
-          </td>
-          <!-- Celda para futuros ejercicios -->
-          <td
-            style="
-              padding: 10px;
-              background-color: #ecf0f1;
-              text-align: center;
-              width: 50%;
-            "
-          >
-            <div style="padding: 12px; font-size: 16px; color: #7f8c8d">
-              🔒 Más ejercicios pronto...
-            </div>
-          </td>
-        </tr>
-      </table>
+          <!-- Fila 3 - Contenido embebido -->
+          <tr>
+            <td style="padding: 10px">
+              <form action="./Practicas/HTML/iframes.html">
+                <button
+                  type="submit"
+                  style="
+                    background-color: #2ecc71;
+                    color: white;
+                    padding: 12px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    width: 100%;
+                    font-size: 16px;
+                  "
+                >
+                  🖼️ Iframes
+                </button>
+              </form>
+            </td>
+            <td style="padding: 10px">
+              <form action="./Practicas/HTML/practicadisplayinline.html">
+                <button
+                  type="submit"
+                  style="
+                    background-color: #ff6b6b;
+                    color: white;
+                    padding: 12px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    width: 100%;
+                    font-size: 16px;
+                  "
+                >
+                  🧱 Display Inline-block
+                </button>
+              </form>
+            </td>
+          </tr>
+
+          <!-- Fila 4 - Maquetación -->
+          <tr>
+            <td style="padding: 10px">
+              <form action="./Practicas/HTML/maquetación.html">
+                <button
+                  type="submit"
+                  style="
+                    background-color: #54a0ff;
+                    color: white;
+                    padding: 12px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    width: 100%;
+                    font-size: 16px;
+                  "
+                >
+                  🧩 Maquetación Básica
+                </button>
+              </form>
+            </td>
+            <td style="padding: 10px">
+              <form action="./Practicas/HTML/practicadisplayinline.html">
+                <button
+                  type="submit"
+                  style="
+                    background-color: #ff9f43;
+                    color: white;
+                    padding: 12px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    width: 100%;
+                    font-size: 16px;
+                  "
+                >
+                  📐 Maquetación Avanzada
+                </button>
+              </form>
+            </td>
+          </tr>
+
+          <!-- Fila 5 - Examen -->
+          <tr>
+            <td style="padding: 10px">
+              <form action="./Practicas/HTML/practicadisplayinline.html">
+                <button
+                  type="submit"
+                  style="
+                    background-color: #6c5ce7;
+                    color: white;
+                    padding: 12px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    width: 100%;
+                    font-size: 16px;
+                  "
+                >
+                  📝 Práctica Examen
+                </button>
+              </form>
+            </td>
+            <td
+              style="
+                padding: 10px;
+                background-color: #ecf0f1;
+                text-align: center;
+              "
+            >
+              <div style="padding: 12px; font-size: 16px; color: #7f8c8d">
+                🔜 Más ejercicios...
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
     </div>
 
     <!-- ========== PIE DE PÁGINA ========== -->

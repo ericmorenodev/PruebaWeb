@@ -82,7 +82,7 @@
         background-repeat: no-repeat;
       "
     >
-      <!-- 3 párrafos en inline-block, uno al lado del otro -->
+      <!-- 3 párrafos en float left, uno al lado del otro -->
       <div
         style="
           width: 250px;
@@ -131,6 +131,68 @@
           Quam, aliquid?
         </p>
       </div>
+    </div>
+
+    <br /><br />
+
+    <div style="height: 500px; width: 700px; margin: auto">
+      <!-- Div primero de color rojo -->
+      <div
+        style="float: left; background-color: red; width: 100px; height: 500px"
+      ></div>
+
+      <!-- Div que contendrá un div arriba de color amarillo y un div abajo de color morado -->
+      <div style="float: left; width: 500px">
+        <!-- Div amarillo que irá encima -->
+        <div style="background-color: yellow; width: 100%; height: 100px"></div>
+        <!-- Div azul que estará en el centro -->
+        <div style="background-color: blue; width: 100%; height: 300px"></div>
+        <!-- Div de abajo del todo en morado -->
+        <div style="background-color: purple; width: 100%; height: 100px"></div>
+      </div>
+
+      <!-- Div verde último -->
+      <div
+        style="
+          float: left;
+          background-color: green;
+          width: 100px;
+          height: 500px;
+        "
+      ></div>
+    </div>
+
+    <br /><br />
+
+    <div style="height: 500px; width: 700px; margin: auto; font-size: 0">
+      <!-- Div rojo -->
+      <div
+        style="
+          display: inline-block;
+          background-color: red;
+          width: 100px;
+          height: 500px;
+          vertical-align: top; /* Alinea los elementos en la parte superior */
+        "
+      ></div>
+      <!-- Div central -->
+      <div style="display: inline-block; width: 500px; vertical-align: top">
+        <div style="background-color: yellow; height: 100px"></div>
+        <div style="background-color: blue; height: 300px"></div>
+        <div style="background-color: purple; height: 100px"></div>
+      </div>
+      <!-- Sin espacio aquí -->
+
+      <!-- Div verde -->
+      <div
+        style="
+          display: inline-block;
+          background-color: green;
+          width: 100px;
+          height: 500px;
+          vertical-align: top;
+        "
+      ></div>
     </div>
   </body>
 </html>
