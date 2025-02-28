@@ -1,5 +1,6 @@
 body {
   background-color: lightgray;
+  margin: 0;
 }
 
 h1 {
@@ -7,62 +8,53 @@ h1 {
   background-color: black;
   text-align: center;
   margin: 0;
-}
-
-.container {
-  width: 300px;
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .articulo {
   width: 50%;
-  text-align: justify;
-  margin: 0 auto;
+  margin: auto;
   padding: 50px;
-  border-bottom: black 3px solid;
+  border-bottom: 3px solid black;
 }
 
-/* titulo articulo letras grandes y negras */
 .tituloarticulo {
   font-size: 2rem;
   color: #000;
   margin: 0;
   text-align: center;
-  border-bottom: white 5px solid;
+  border-bottom: 5px solid white;
 }
 
-/* fecha centrada con fondo gris y letras blancas */
 .fecha {
-  margin: auto;
   text-align: center;
-  padding-top: 2%;
+  padding: 10px 0 2%;
 }
 
 .fecha span {
   background-color: #4e4e4e;
   color: #fff;
-  margin: 0;
   font-size: 1.6rem;
+  /* padding da espacio a la fecha para que no se pegue el cuadrado */
+  padding: 5px 15px;
 }
 
 strong {
   font-variant: small-caps;
 }
 
-span.italic {
-  border-bottom: red 1px dashed;
+.italic {
+  border-bottom: 1px dashed red;
   font-family: serif;
   font-size: 150%;
   font-style: italic;
 }
 
-span.cargo {
+.cargo {
   background-color: white;
   color: red;
 }
 
-span.lugar {
+.lugar {
   color: blue;
 }
