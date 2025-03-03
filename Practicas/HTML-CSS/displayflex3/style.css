@@ -1,0 +1,46 @@
+h1 {
+  background-color: grey;
+  margin: 0;
+}
+h2 {
+  margin: 0;
+  text-align: right;
+  background-color: lightgrey;
+  border-bottom: 1px dashed gray;
+}
+h3 {
+  margin: 0;
+  text-align: center;
+  background-color: lightgrey;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+/* caja con todas las columnas de anuncios */
+.principal {
+  display: flex;
+}
+/* columna con diferentes anuncios */
+.columna {
+  border-right: 1px dashed gray;
+  border-left: 1px dashed gray;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 5px;
+  padding: 0px 10px;
+  width: 150px;
+}
+.anuncio {
+  border: 1px solid gray;
+  margin: 10px 0;
+  overflow: auto;
+}
+.tituloanuncio {
+  background-color: lightgrey;
+  color: white;
+  text-align: right;
+  margin: 0;
+}
+
+.cuerpoanuncio {
+  margin: 10px;
+}

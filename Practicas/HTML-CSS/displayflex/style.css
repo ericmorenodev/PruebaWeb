@@ -1,0 +1,19 @@
+.container {
+  margin: auto;
+  background-image: url("https://pablomonteserin.com/wp-content/uploads/2020/05/bg.jpg");
+  width: 750px;
+  height: 571px;
+  display: flex;
+}
+.text {
+  width: 31%;
+  padding: 20px;
+}
+
+/* ejercicio 2 */
+
+/* clase logo */
+.logo {
+  width: 100px;
+  height: 100px;
+}
