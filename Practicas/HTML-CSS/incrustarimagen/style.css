@@ -1,0 +1,41 @@
+body {
+  background-color: rgb(80, 143, 80); /* Fondo verde */
+  font-family: sans-serif;
+  font-size: 1.5rem; /* Tamaño de fuente */
+  text-align: justify; /* Texto justificado */
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  color: #191970; /* Color azul oscuro */
+  text-align: right; /* Alineado a la derecha */
+  text-transform: uppercase; /* Letras mayúsculas */
+  letter-spacing: 10px; /* Espaciado entre letras */
+  margin-bottom: 20px;
+}
+h2 {
+  color: white;
+  background-color: rgb(54, 71, 29);
+  text-align: left;
+}
+p {
+  color: black;
+  font-size: 1.5rem;
+}
+.contenido {
+  width: 70%;
+  margin: auto;
+}
+
+.fiore {
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+.fiore img {
+  float: left;
+}
+
+.croce img {
+  float: right;
+}
