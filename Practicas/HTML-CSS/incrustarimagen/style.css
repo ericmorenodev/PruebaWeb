@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(80, 143, 80); /* Fondo verde */
+  background-color: rgb(156, 177, 156); /* Fondo verde */
   font-family: sans-serif;
   font-size: 1.5rem; /* Tamaño de fuente */
   text-align: justify; /* Texto justificado */
@@ -17,6 +17,7 @@ h2 {
   color: white;
   background-color: rgb(54, 71, 29);
   text-align: left;
+  margin-top: 0;
 }
 p {
   color: black;
@@ -30,10 +31,7 @@ p {
 .fiore {
   margin: auto;
   padding-bottom: 40px;
-}
-
-.fiore img {
-  float: left;
+  display: flex;
 }
 
 .croce img {
