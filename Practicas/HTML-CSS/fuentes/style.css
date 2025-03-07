@@ -1,0 +1,7 @@
+@font-face {
+  font-family: miFuente;
+  src: url(../../Assets/fuente.ttf);
+}
+h1 {
+  font-family: miFuente;
+}

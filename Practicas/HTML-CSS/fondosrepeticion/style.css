@@ -1,0 +1,25 @@
+.container {
+  background-image: url("https://pablomonteserin.com/wp-content/uploads/2022/02/fondo.png");
+  background-size: 100%;
+  width: 800px;
+  height: 900px;
+}
+.container2 {
+  width: 400px;
+  height: 400px;
+  background-image: url(https://pablomonteserin.com/res/html5/ex/back2/html-left.png),
+    url(https://pablomonteserin.com/res/html5/ex/back2/html-right.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left center, right center;
+}
+
+.container3 {
+  width: 400px;
+  height: 400px;
+  background-image: url(https://pablomonteserin.com/res/html5/ex/degradado-multiple/tijeras.svg),
+    url(https://pablomonteserin.com/wp-content/uploads/2020/10/mundo.svg),
+    radial-gradient(ellipse at center, #a644af 0%, #20aa43 51%, #887de8 100%);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: bottom right, top left, center;
+  background-size: auto auto, 50% 50%, auto auto;
+}
