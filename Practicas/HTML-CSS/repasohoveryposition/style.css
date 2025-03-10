@@ -1,7 +1,13 @@
+/* quiero una galeria de imagenes, donde cuando pase el raton por encima de una imagen se expanda un poco y se haga un poco transparente, se vea por el hueco que ocupaba la imagen un fondo negro con un texto p. cuando no pase el raton por encima de la imagen se vuelva a su tamaño normal y opacidad normal. */
+
 /* Contenedor principal que contiene las imagenes */
 .container {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1000px; /* 5 imagenes de 200px */
+  border: 20px solid #fff;
+  box-shadow: 0px 0px 10px #ccc;
+  margin: 20px auto;
 }
 
 /* Estilos para cada una de las imagenes */
