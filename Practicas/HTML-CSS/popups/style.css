@@ -1,0 +1,22 @@
+.contenedor {
+  width: 200px;
+  height: 200px;
+}
+
+.contenedor a span:hover {
+  background-color: red;
+}
+
+.capaFlotante {
+  background-image: url(https://pablomonteserin.com/res/html5/ex/opacidad/back2.jpg);
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  display: none;
+}
+
+a:hover .capaFlotante {
+  display: block;
+}

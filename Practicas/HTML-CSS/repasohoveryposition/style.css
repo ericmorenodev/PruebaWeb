@@ -1,0 +1,41 @@
+/* Contenedor principal que contiene las imagenes */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Estilos para cada una de las imagenes */
+.fondoimagen {
+  width: 200px;
+  background-color: black;
+  position: relative;
+}
+
+/* Estilos para la imagen */
+.fondoimagen img {
+  width: 100%;
+  display: block;
+  transition: 0.5s; /* Transición para hacer que la imagen cambie de tamaño */
+}
+
+/* Estilos para el hover de la imagen */
+.fondoimagen:hover img {
+  opacity: 0.3; /* Hace que la imagen sea transparente */
+  transform: scale(2); /* Hace que la imagen se agrande */
+}
+
+/* Estilos para el texto */
+.fondoimagen p {
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  opacity: 0; /* Hace que el texto sea invisible */
+  transition: 0.5s; /* Transición para hacer que el texto aparezca */
+}
+
+/* Estilos para el hover del texto */
+.fondoimagen:hover p {
+  opacity: 1; /* Hace que el texto sea visible */
+}
