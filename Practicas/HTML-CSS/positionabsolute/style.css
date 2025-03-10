@@ -1,0 +1,55 @@
+.container {
+  height: 700px;
+  text-align: center;
+}
+
+.container .p1 {
+  background-color: #dbc9a6;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #9b8f76;
+}
+
+.container .boxcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.murphybox {
+  width: 50%;
+  height: 200px;
+  box-sizing: border-box;
+}
+
+.murphybox:hover {
+  z-index: 1;
+}
+
+.div1 {
+  background-color: #ffffb3;
+  border: 2px solid #ebeba5;
+}
+
+.div2 {
+  background-color: #c6ffff;
+  border: 2px solid #98c4c4;
+}
+
+.div3 {
+  background-color: #91ff91;
+  border: 2px solid #64b064;
+}
+
+.div4 {
+  background-color: #ffe5ff;
+  border: 2px solid #baa7ba;
+}
+
+.div5 {
+  background-color: #ffb4b4;
+  border: 2px solid #865f5f;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
