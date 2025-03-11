@@ -1,0 +1,79 @@
+.barra {
+  width: 500px;
+  height: 30px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.barritaanimada {
+  height: 100%;
+  background: green;
+  width: 0;
+}
+
+.barra:hover .barritaanimada {
+  animation: load 5s forwards;
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+    background-color: green;
+  }
+  50% {
+    width: 50%;
+    background-color: yellow;
+  }
+  75% {
+    width: 75%;
+    background-color: red;
+  }
+  100% {
+    width: 100%;
+    background-color: green;
+  }
+}
+
+.barra2 {
+  width: 500px;
+  height: 30px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.barritaanimada2 {
+  height: 100%;
+  background: url(https://pablomonteserin.com/res/html5/ex/animations/keyframes/barrita-corazones/corazon-mask.png)
+    repeat-x;
+  background: url(https://pablomonteserin.com/res/html5/ex/animations/keyframes/barrita-corazones/corazon-mask.png);
+  background-size: auto 100%;
+  background-color: red;
+  width: 0;
+}
+
+.barra2:hover .barritaanimada2 {
+  animation: load2 2s forwards;
+}
+
+@keyframes load2 {
+  to {
+    width: 100%;
+    background-color: green;
+  }
+}
+
+.espiral {
+  margin-top: 100px;
+  width: 50%;
+  height: 50%;
+  animation: giro 2s infinite linear;
+}
+
+@keyframes giro {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
