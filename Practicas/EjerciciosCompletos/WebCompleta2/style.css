@@ -48,6 +48,7 @@
   width: 100%;
   margin-top: 0px;
   background: url(https://pablomonteserin.com/res/html5/ex/grassy-grass/img/pic01.jpg);
+  background-repeat: repeat-x;
 }
 
 /* ===== CONTENT SECTION ===== */
@@ -60,7 +61,7 @@
 
 /* Left Content */
 .left {
-  width: 50%;
+  width: 40%;
   padding: 20px;
 }
 
@@ -73,14 +74,12 @@
   padding: 5px 0;
   margin-bottom: 15px;
   color: #000;
-  text-decoration: none;
-  border-bottom: 1px solid #000;
   display: block;
 }
 
 /* Right Content */
 .right {
-  width: 50%;
+  width: 60%;
   padding: 20px;
 }
 
@@ -102,7 +101,7 @@
 
 /* Columns */
 .column {
-  width: 20%;
+  width: 15%;
   padding: 20px;
 }
 
@@ -120,7 +119,7 @@
 
 /* Social Section */
 .social {
-  width: 20%;
+  width: 15%;
   text-align: center;
 }
 
@@ -139,7 +138,7 @@
 
 /* ===== COPYRIGHT SECTION ===== */
 .copyright {
-  padding: 50px;
+  padding: 80px;
   text-align: center;
   background-color: rgba(22, 160, 133, 0.7);
 }
