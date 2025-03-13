@@ -1,0 +1,145 @@
+/* ===== GLOBAL STYLES ===== */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* ===== HEADER/MENU STYLES ===== */
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(22, 160, 133, 0.7);
+  position: fixed;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li a {
+  padding: 30px;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: rgba(22, 160, 133, 0.2);
+}
+
+/* ===== TITLE SECTION ===== */
+.title {
+  background-color: #333333;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  padding: 10%;
+  margin-bottom: 0px;
+}
+
+/* ===== IMAGE SECTION ===== */
+.image {
+  width: 100%;
+  height: 300px;
+  width: 100%;
+  margin-top: 0px;
+  background: url(https://pablomonteserin.com/res/html5/ex/grassy-grass/img/pic01.jpg);
+}
+
+/* ===== CONTENT SECTION ===== */
+.content {
+  width: 60%;
+  padding: 10px;
+  display: flex;
+  margin: 0 auto;
+}
+
+/* Left Content */
+.left {
+  width: 50%;
+  padding: 20px;
+}
+
+.left h2 {
+  margin-bottom: 23px;
+  color: #16a085;
+}
+
+.left a {
+  padding: 5px 0;
+  margin-bottom: 15px;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  display: block;
+}
+
+/* Right Content */
+.right {
+  width: 50%;
+  padding: 20px;
+}
+
+.right h2 {
+  margin-bottom: 30px;
+  color: #16a085;
+  text-transform: capitalize;
+}
+
+/* ===== FOOTER SECTION ===== */
+.footer {
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: #333333;
+  color: #fff;
+}
+
+/* Columns */
+.column {
+  width: 20%;
+  padding: 20px;
+}
+
+.column h2 {
+  margin-bottom: 25px;
+  color: white;
+}
+
+.column a {
+  margin-bottom: 15px;
+  color: #627084;
+  text-decoration: none;
+  display: block;
+}
+
+/* Social Section */
+.social {
+  width: 20%;
+  text-align: center;
+}
+
+.social ul {
+  margin-top: 20px;
+}
+
+.social li {
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.social img {
+  width: 30px;
+}
+
+/* ===== COPYRIGHT SECTION ===== */
+.copyright {
+  padding: 50px;
+  text-align: center;
+  background-color: rgba(22, 160, 133, 0.7);
+}
