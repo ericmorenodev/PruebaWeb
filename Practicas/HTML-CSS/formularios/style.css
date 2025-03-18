@@ -1,0 +1,21 @@
+* {
+  margin: 5px;
+  padding: 0;
+  box-sizing: border-box;
+}
+label {
+  display: inline-block;
+  width: 220px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+#comments {
+  height: 200px;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  margin-top: 15px;
+  margin-left: 100px;
+  padding: 12px 30px;
+}

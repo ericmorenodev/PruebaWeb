@@ -1,32 +1,29 @@
-body {
-  margin: auto;
-  padding: 0;
-}
 
-.container {
+.container2 {
   width: 900px;
   margin: auto;
   display: flex;
+  padding: 0;
 }
 
-.logo {
+.container2 .logo {
   border-bottom: 1px solid gray;
 }
 
 /* clase principal */
-.principal {
+.container2 .principal {
   width: 70%;
   padding: 20px;
   border-left: 1px solid gray;
   box-sizing: border-box;
 }
 
-.vertical {
+.container2 .vertical {
   width: 30%;
 }
 
 /* clase paginas estará debajo del logo */
-.paginas {
+.container2 .paginas {
   flex-grow: 1;
   display: flex;
   flex-direction: column; /* Ensure it occupies from top to bottom */

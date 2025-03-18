@@ -1,19 +1,131 @@
-.container {
-  margin: auto;
+.container1 {
   background-image: url("https://pablomonteserin.com/wp-content/uploads/2020/05/bg.jpg");
   width: 750px;
   height: 571px;
   display: flex;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto 50px;
 }
-.text {
+
+.container1 .text {
   width: 31%;
   padding: 20px;
 }
 
-/* ejercicio 2 */
-
-/* clase logo */
-.logo {
+.container1 .logo {
   width: 100px;
   height: 100px;
+}
+
+/* ejercicio 2 */
+
+.container2 {
+  width: 900px;
+  display: flex;
+  padding: 0;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto 50px;
+}
+
+.container2 .logo {
+  border-bottom: 1px solid gray;
+}
+
+/* clase principal */
+.container2 .principal {
+  width: 70%;
+  padding: 20px;
+  border-left: 1px solid gray;
+  box-sizing: border-box;
+}
+
+.container2 .vertical {
+  width: 30%;
+}
+
+/* clase paginas estará debajo del logo */
+.container2 .paginas {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column; /* Ensure it occupies from top to bottom */
+}
+
+
+/* ejercicio 3 */
+
+
+
+.container3 h1 {
+  background-color: grey;
+  margin: 0;
+}
+.container3 h2 {
+  margin: 0;
+  text-align: right;
+  background-color: lightgrey;
+  border-bottom: 1px dashed gray;
+}
+.container3 h3 {
+  margin: 0;
+  text-align: center;
+  background-color: lightgrey;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+/* caja con todas las columnas de anuncios */
+.container3 .principal {
+  display: flex;
+}
+/* columna con diferentes anuncios */
+.container3 .columna {
+  border-right: 1px dashed gray;
+  border-left: 1px dashed gray;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 5px;
+  padding: 0px 10px;
+  width: 150px;
+}
+.container3 .anuncio {
+  border: 1px solid gray;
+  margin: 10px 0;
+  overflow: auto;
+}
+.container3 .tituloanuncio {
+  background-color: lightgrey;
+  color: white;
+  text-align: right;
+  margin: 0;
+}
+
+.container3 .cuerpoanuncio {
+  margin: 10px;
+}
+
+/* ejercicio 4 */
+
+.container4 {
+  background-image: url("https://pablomonteserin.com/res/html5/ex/flexbox/panteon/panteon.jpg");
+  width: 722px;
+  height: 480px;
+  margin: 20px auto 50px;
+  overflow: hidden;
+}
+
+.container4 .row {
+  display: flex;
+  justify-content: center;
+  margin-top: 28%;
+  gap: 70px;
+  margin-left: 5%;
+}
+
+.container4 .columna {
+  overflow: auto;
+  width: 70px;
+  height: 185px;
 }

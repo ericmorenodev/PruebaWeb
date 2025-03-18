@@ -4,257 +4,341 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Hub de Ejercicios</title>
-  </head>
-  <body
-    style="
-      background-color: #f0f8ff;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-    "
-  >
-    <!-- ========== ENCABEZADO ========== -->
-    <div
-      style="
+    <style>
+      body {
+        background-color: #f0f8ff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .header {
         background-color: #4caf50;
         padding: 15px;
         border-radius: 10px;
         text-align: center;
         margin: 20px;
-      "
-    >
-      <h1 style="color: white; margin: 0">🏋️ Mis Ejercicios HTML</h1>
-    </div>
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
 
-    <!-- ========== CONTENIDO PRINCIPAL ========== -->
-    <div style="flex: 1; padding: 0 20px">
-      <div style="max-width: 1000px; margin: 0 auto">
-        <h2 style="color: #2c3e50; margin-top: 0">
-          🚀 Ejercicios Disponibles:
-        </h2>
+      .main-content {
+        flex: 1;
+        padding: 0 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 100%;
+      }
 
-        <!-- Tabla de ejercicios -->
-        <table
-          style="width: 100%; border-collapse: collapse; table-layout: fixed"
-        >
-          <!-- Fila 1 - Fundamentos -->
-          <tr>
-            <td style="padding: 10px">
-              <form action="./Practicas/HTML/listas.html">
-                <button
-                  type="submit"
-                  style="
-                    background-color: #3498db;
-                    color: white;
-                    padding: 12px;
-                    border: none;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    width: 100%;
-                    font-size: 16px;
-                  "
-                >
-                  📋 Listas
-                </button>
-              </form>
-            </td>
-            <td style="padding: 10px">
-              <form action="./Practicas/HTML/PruebaMetalinks.html">
-                <button
-                  type="submit"
-                  style="
-                    background-color: #e67e22;
-                    color: white;
-                    padding: 12px;
-                    border: none;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    width: 100%;
-                    font-size: 16px;
-                  "
-                >
-                  🔗 Enlaces
-                </button>
-              </form>
-            </td>
-          </tr>
+      .button-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px 0;
+      }
 
-          <!-- Fila 2 - Estructuras -->
-          <tr>
-            <td style="padding: 10px">
-              <form action="./Practicas/HTML/tablas.html">
-                <button
-                  type="submit"
-                  style="
-                    background-color: #9b59b6;
-                    color: white;
-                    padding: 12px;
-                    border: none;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    width: 100%;
-                    font-size: 16px;
-                  "
-                >
-                  📊 Tablas
-                </button>
-              </form>
-            </td>
-            <td style="padding: 10px">
-              <form action="./Practicas/HTML/estiloshtmlsimple.html">
-                <button
-                  type="submit"
-                  style="
-                    background-color: #e74c3c;
-                    color: white;
-                    padding: 12px;
-                    border: none;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    width: 100%;
-                    font-size: 16px;
-                  "
-                >
-                  🎨 Estilos
-                </button>
-              </form>
-            </td>
-          </tr>
+      .section {
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+      }
 
-          <!-- Fila 3 - Contenido embebido -->
-          <tr>
-            <td style="padding: 10px">
-              <form action="./Practicas/HTML/iframes.html">
-                <button
-                  type="submit"
-                  style="
-                    background-color: #2ecc71;
-                    color: white;
-                    padding: 12px;
-                    border: none;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    width: 100%;
-                    font-size: 16px;
-                  "
-                >
-                  🖼️ Iframes
-                </button>
-              </form>
-            </td>
-            <td style="padding: 10px">
-              <form action="./Practicas/HTML/practicadisplayinline.html">
-                <button
-                  type="submit"
-                  style="
-                    background-color: #ff6b6b;
-                    color: white;
-                    padding: 12px;
-                    border: none;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    width: 100%;
-                    font-size: 16px;
-                  "
-                >
-                  🧱 Display Inline-block
-                </button>
-              </form>
-            </td>
-          </tr>
+      .section:hover {
+        transform: translateY(-2px);
+      }
 
-          <!-- Fila 4 - Maquetación -->
-          <tr>
-            <td style="padding: 10px">
-              <form action="./Practicas/HTML/maquetación.html">
-                <button
-                  type="submit"
-                  style="
-                    background-color: #54a0ff;
-                    color: white;
-                    padding: 12px;
-                    border: none;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    width: 100%;
-                    font-size: 16px;
-                  "
-                >
-                  🧩 Maquetación Básica
-                </button>
-              </form>
-            </td>
-            <td style="padding: 10px">
-              <form action="./Practicas/HTML/practicadisplayinline.html">
-                <button
-                  type="submit"
-                  style="
-                    background-color: #ff9f43;
-                    color: white;
-                    padding: 12px;
-                    border: none;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    width: 100%;
-                    font-size: 16px;
-                  "
-                >
-                  📐 Maquetación Avanzada
-                </button>
-              </form>
-            </td>
-          </tr>
+      .section-subtitle {
+        font-size: 1.4em;
+        color: #2c3e50;
+        margin: 0 0 20px 0;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #4caf50;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
 
-          <!-- Fila 5 - Examen -->
-          <tr>
-            <td style="padding: 10px">
-              <form action="./Practicas/HTML/practicadisplayinline.html">
-                <button
-                  type="submit"
-                  style="
-                    background-color: #6c5ce7;
-                    color: white;
-                    padding: 12px;
-                    border: none;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    width: 100%;
-                    font-size: 16px;
-                  "
-                >
-                  📝 Práctica Examen
-                </button>
-              </form>
-            </td>
-            <td
-              style="
-                padding: 10px;
-                background-color: #ecf0f1;
-                text-align: center;
-              "
-            >
-              <div style="padding: 12px; font-size: 16px; color: #7f8c8d">
-                🔜 Más ejercicios...
-              </div>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-
-    <!-- ========== PIE DE PÁGINA ========== -->
-    <div
-      style="
-        background-color: #34495e;
-        padding: 10px;
+      .exercise-button {
+        color: white;
+        padding: 15px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 90%;
+        font-size: 16px;
+        text-decoration: none;
+        display: block;
         text-align: center;
-        border-radius: 5px 5px 0 0;
+        transition: all 0.3s ease;
+        margin: 5px 0;
+      }
+
+      .exercise-button:hover {
+        filter: brightness(1.1);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      .footer {
+        background-color: #34495e;
+        padding: 15px;
+        text-align: center;
+        color: white;
         margin-top: auto;
-      "
-    >
-      <p style="color: white; margin: 5px">Creado con HTML puro - 2024</p>
-    </div>
+        border-radius: 10px 10px 0 0;
+      }
+
+      /* Grid interno para los botones */
+      .section .button-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <!-- ENCABEZADO -->
+    <header class="header">
+      <h1>🏋️ Mis Ejercicios HTML</h1>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <h2>🚀 Ejercicios Disponibles:</h2>
+
+      <div class="button-grid">
+        <script>
+          const ejercicioshtml = [
+            {
+              texto: "📋 Listas",
+              color: "#3498db",
+              url: "./Practicas/HTML/listas.html",
+            },
+            {
+              texto: "🔗 Enlaces",
+              color: "#e67e22",
+              url: "./Practicas/HTML/PruebaMetalinks.html",
+            },
+            {
+              texto: "📊 Tablas",
+              color: "#9b59b6",
+              url: "./Practicas/HTML/tablas.html",
+            },
+            {
+              texto: "🎨 Estilos",
+              color: "#e74c3c",
+              url: "./Practicas/HTML/estiloshtmlsimple.html",
+            },
+            {
+              texto: "🖼️ Iframes",
+              color: "#2ecc71",
+              url: "./Practicas/HTML/iframes.html",
+            },
+            {
+              texto: "🧱 Display Inline-block",
+              color: "#ff6b6b",
+              url: "./Practicas/HTML/practicadisplayinline.html",
+            },
+            {
+              texto: "🧩 Maquetación Básica",
+              color: "#54a0ff",
+              url: "./Practicas/HTML/maquetación.html",
+            },
+            {
+              texto: "📐 Maquetación Avanzada",
+              color: "#ff9f43",
+              url: "./Practicas/HTML/practicadisplayinline.html",
+            },
+            {
+              texto: "📝 Práctica Examen",
+              color: "#6c5ce7",
+              url: "./Practicas/HTML/practicadisplayinline.html",
+            },
+          ];
+          const ejercicioshtmlcss = [
+            // 04/03/2025
+            {
+              texto: "🧩 Display Flex",
+              color: "#3498db",
+              url: "./Practicas/HTML-CSS/displayflex/displayflex.html",
+            }, // 9:56
+            {
+              texto: "🧬 Ejecución Genes",
+              color: "#7f8c8d",
+              url: "./Practicas/HTML-CSS/ejectcionargenes/ejectcionargenes.html",
+            }, // 9:56 (ejercicomargenes)
+            {
+              texto: "🔗 Ejecución Spans",
+              color: "#d35400",
+              url: "./Practicas/HTML-CSS/ejectciospans/ejectciospans.html",
+            }, // 9:56 (ejerciciospans)
+            {
+              texto: "🎨 Estilos Simples",
+              color: "#27ae60",
+              url: "./Practicas/HTML-CSS/estilossimplecss/estilossimplecss.html",
+            }, // 9:56 (estilossímplecss)
+            {
+              texto: "🖼️ Incrustar Imagen",
+              color: "#e67e22",
+              url: "./Practicas/HTML-CSS/incrustarimagen/incrustarimagen.html",
+            }, // 9:57
+            {
+              texto: "🔠 Letra Capital",
+              color: "#2c3e50",
+              url: "./Practicas/HTML-CSS/letracapitalizada/letracapitalizada.html",
+            }, // 10:26
+            {
+              texto: "🖼 Fondos Repetidos",
+              color: "#2980b9",
+              url: "./Practicas/HTML-CSS/fondosrepeticion/fondosrepeticion.html",
+            }, // 12:19
+            {
+              texto: "🌑 Sombras",
+              color: "#95a5a6",
+              url: "./Practicas/HTML-CSS/sombras/sombras.html",
+            }, // 13:24
+            {
+              texto: "🔤 Fuentes",
+              color: "#1abc9c",
+              url: "./Practicas/HTML-CSS/fuentes/fuentes.html",
+            }, // 13:42
+
+            // 07/03/2025
+            {
+              texto: "🖌️ Bordes",
+              color: "#e67e22",
+              url: "./Practicas/HTML-CSS/bordes/bordes.html",
+            }, // 9:10
+            {
+              texto: "🌈 Transiciones",
+              color: "#ff6b6b",
+              url: "./Practicas/HTML-CSS/transiciones/transiciones.html",
+            }, // 9:26
+            {
+              texto: "📍 Position Absolute",
+              color: "#9b59b6",
+              url: "./Practicas/HTML-CSS/positionabsolute/positionabsolute.html",
+            }, // 12:44
+
+            // 10/03/2025
+            {
+              texto: "🪟 Popups",
+              color: "#ff9f43",
+              url: "./Practicas/HTML-CSS/popups/popups.html",
+            }, // 9:13
+            {
+              texto: "🎯 Hover & Position",
+              color: "#e74c3c",
+              url: "./Practicas/HTML-CSS/repasohovevyposition/repasohovevyposition.html",
+            }, // 9:36 (repasohoveyposition)
+            {
+              texto: "🗂 Menú Desplegable",
+              color: "#e74c3c",
+              url: "./Practicas/HTML-CSS/repasomenudesplegable/repasomenudesplegable.html",
+            }, // 10:48
+            {
+              texto: "🧭 Navegación Vertical",
+              color: "#f1c40f",
+              url: "./Practicas/HTML-CSS/nevegacionvertical/nevegacionvertical.html",
+            }, // 13:25
+
+            // 11/03/2025
+            {
+              texto: "🌀 Keyframes",
+              color: "#2ecc71",
+              url: "./Practicas/HTML-CSS/keyframes/keyframes.html",
+            }, // 9:22
+            {
+              texto: "🔳 CSS Grid",
+              color: "#6c5ce7",
+              url: "./Practicas/HTML-CSS/grid/grid.html",
+            }, // 12:38
+
+            // 13/03/2025
+            {
+              texto: "📝 Formularios",
+              color: "#54a0ff",
+              url: "./Practicas/HTML-CSS/formularios/formularios.html",
+            }, // 12:48
+
+            // 17/03/2025
+            {
+              texto: "📋 Formularios Avanzados",
+              color: "#8e44ad",
+              url: "./Practicas/HTML-CSS/formulariosprueba/formularios.html",
+            }, // 19:29
+            {
+              texto: "🕶 Spoiler",
+              color: "#7f8c8d",
+              url: "./Practicas/HTML-CSS/spoiler/spoiler.html",
+            }, // 19:29
+          ];
+          const ejercicioscompletos = [
+            {
+              texto: "🌐 Web Completa 1",
+              color: "#3498db",
+              url: "./Practicas/EjerciciosCompletos/WebCompleta1/index.html",
+            },
+            {
+              texto: "💻 Web Completa 2",
+              color: "#e67e22",
+              url: "./Practicas/EjerciciosCompletos/WebCompleta2/index.html",
+            },
+          ];
+
+          const ejerciciosjs = [
+          {
+              texto: "📝 Formularios JS",
+              color: "#ff6b6b",
+              url: "./Practicas/JavaScript-HTML/formularios/formularios.html",
+            },
+          ];
+          function crearSeccion(titulo, ejercicios) {
+            document.write(`
+              <div class="section">
+                <h3 class="section-subtitle">${titulo}</h3>
+                <div class="button-container">
+            `);
+
+            ejercicios.forEach((ejercicio) => {
+              document.write(`
+                <a href="${ejercicio.url}" 
+                   class="exercise-button" 
+                   style="background-color: ${ejercicio.color}">
+                  ${ejercicio.texto}
+                </a>
+              `);
+            });
+
+            document.write(`
+                </div>
+              </div>
+            `);
+          }
+
+          crearSeccion("📄 HTML Básico", ejercicioshtml);
+          crearSeccion("🎨 HTML + CSS", ejercicioshtmlcss);
+          crearSeccion("🏆 Proyectos Completos", ejercicioscompletos);
+          crearSeccion("👨‍💻 JavaScript", ejerciciosjs);
+
+          document.write(`
+            <div class="section">
+              <div style="padding: 20px; text-align: center; color: #7f8c8d;">
+                🔜 Más ejercicios en desarrollo...
+              </div>
+            </div>
+          `);
+        </script>
+      </div>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+      <p>Creado con HTML puro - 2024</p>
+    </footer>
   </body>
 </html>
