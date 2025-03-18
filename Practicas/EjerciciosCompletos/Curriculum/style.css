@@ -1,45 +1,55 @@
-/* Estilos generales */
+/* Variables */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --background-light: #ecf0f1;
+  --hover-color: #d1eafa;
+  --text-color: #333;
+}
+
+/* Estilos base */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.8;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  color: #333;
+  color: var(--text-color);
 }
 
 .curriculum {
   max-width: 800px;
-  margin: 80px auto 20px; /* Añadido margen superior para el menú fijo */
+  margin: 80px auto 20px;
   padding: 30px;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
 }
 
+/* Tipografía */
 h1,
 h2,
 h3 {
-  color: #2c3e50;
+  color: var(--secondary-color);
+  margin-top: 0;
 }
 
 h1 {
   font-size: 2.5em;
-  margin-bottom: 15px;
-  border-bottom: 3px solid #3498db;
+  border-bottom: 3px solid var(--primary-color);
   display: inline-block;
   padding-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 h2 {
   font-size: 2em;
   margin-bottom: 20px;
-  color: #3498db;
+  color: var(--primary-color);
 }
 
 h3 {
   font-size: 1.5em;
-  margin-top: 20px;
   margin-bottom: 15px;
   color: #34495e;
 }
@@ -50,34 +60,13 @@ p {
   color: #555;
 }
 
-ul {
-  margin: 15px 0;
-  padding-left: 25px;
-}
-
-li {
-  margin-bottom: 10px;
-  font-size: 1em;
-  color: #555;
-}
-
-a {
-  color: #3498db;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Estilos para el menú */
+/* Menú */
 .menucontainer {
   font-size: 0.7em;
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: #3498db;
+  background-color: var(--primary-color);
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -102,7 +91,7 @@ a:hover {
   font-size: 1.1em;
   font-weight: 600;
   border-radius: 25px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background- color 0.3s ease, transform 0.2s ease;
 }
 
 .menu a:hover {
@@ -111,13 +100,12 @@ a:hover {
 }
 
 .menu a.active {
-  background-color: #2c3e50;
+  background-color: var(--secondary-color);
   color: #fff;
 }
 
-/* Secciones específicas */
+/* Secciones comunes */
 .datos-personales {
-  justify-content: center;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -128,35 +116,34 @@ a:hover {
   margin: 0;
 }
 
-.resumen {
-  margin-bottom: 40px;
-  margin-top: 0;
-  background-color: #ecf0f1;
+.resumen,
+.formacion,
+.experiencia-unico {
+  background-color: var(--background-light);
   border: 1px solid #d6d8da;
   padding: 20px;
   border-radius: 8px;
+  margin-bottom: 40px;
+  transition: all 0.2s ease;
 }
 
-.resumen h2 {
-  margin: 0;
+.resumen:hover,
+.formacion:hover,
+.experiencia-unico:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-2px);
 }
 
-.resumen p {
-  font-size: 1.1em;
-  line-height: 1.8;
-  color: #555;
-}
-
+/* Experiencia y Formación */
 .experiencia,
 .formacioncontent,
 .habilidades,
 .idiomas {
-  border: 1px solid #3498db;
+  border: 1px solid var(--primary-color);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 40px;
   padding: 25px;
-  padding-top: 0;
 }
 
 .experiencia h3,
@@ -165,102 +152,157 @@ a:hover {
   font-weight: 600;
 }
 
-.experiencia ul,
-.formacioncontent ul,
-.habilidades ul,
-.idiomas ul {
-  list-style-type: disc;
+/* Listas */
+ul {
+  margin: 15px 0;
+  padding-left: 25px;
 }
 
-.habilidades ul {
+.habilidades ul,
+.idiomas ul {
   list-style-type: none;
   padding-left: 0;
 }
 
-.habilidades ul li {
-  background-color: #ecf0f1;
+.habilidades li,
+.idiomas li {
+  background-color: var(--background-light);
   padding: 10px;
   margin-bottom: 8px;
   border-radius: 6px;
-  font-size: 1em;
+  transition: all 0.2s ease;
 }
 
-.idiomas ul {
-  list-style-type: none;
-  padding-left: 0;
+.habilidades li:hover,
+.idiomas li:hover {
+  transform: translateY(-1px);
+  background-color: var(--hover-color);
 }
 
-.idiomas ul li {
-  font-size: 1em;
-  color: #555;
-}
-
-/* Adiciones de ejercicios anteriores */
+/* Elementos específicos */
 .puesto {
-  border-bottom: 3px solid #2c3e50;
+  border-bottom: 3px solid var(--secondary-color);
   padding-bottom: 10px;
   margin-bottom: 15px;
 }
 
-.formacion {
-  background-color: #ecf0f1;
-  border: 1px solid #bdc3c7;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
-}
-
-.formacion:hover {
-  transform: translateY(-2px);
-}
-
-.experiencia-unico {
-  background-color: #ecf0f1;
-  border: 1px solid #bdc3c7;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
-}
-
-.experiencia-unico:hover {
-  transform: translateY(-2px);
-}
-
-/* Estilos para mejorar la legibilidad */
-strong {
-  color: #2c3e50;
+a {
+  color: var(--primary-color);
+  text-decoration: none;
   font-weight: 600;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  transition: all 0.2s ease;
 }
 
-/* Responsive design */
+a:hover {
+  text-decoration: underline;
+}
+
+/* keyframes */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.98);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Animaciones para elementos específicos */
+.curriculum {
+  animation: scaleUp 0.6s ease-out forwards;
+}
+
+.resumen,
+.experiencia,
+.formacioncontent,
+.habilidades,
+.idiomas {
+  opacity: 0;
+  animation: slideIn 0.6s ease-out forwards;
+}
+
+/* Retrasos para animaciones escalonadas */
+.resumen {
+  animation-delay: 0.2s;
+}
+.experiencia {
+  animation-delay: 0.4s;
+}
+.formacioncontent {
+  animation-delay: 0.6s;
+}
+.habilidades {
+  animation-delay: 0.8s;
+}
+.idiomas {
+  animation-delay: 1s;
+}
+
+/* Animación para items del menú */
+.menu li {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.menu li:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.menu li:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.menu li:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.menu li:nth-child(4) {
+  animation-delay: 0.5s;
+}
+.menu li:nth-child(5) {
+  animation-delay: 0.6s;
+}
+
+/* Responsive - Manteniendo valores originales */
 @media (max-width: 768px) {
+  .curriculum {
+    padding: 20px;
+    margin-top: 60px;
+  }
+
   h1 {
     font-size: 2.2em;
   }
-
   h2 {
     font-size: 1.8em;
   }
-
   h3 {
     font-size: 1.4em;
-  }
-
-  .curriculum {
-    padding: 20px;
-  }
-
-  .datos-personales p,
-  li {
-    font-size: 1em;
-  }
-
-  .resumen p {
-    font-size: 1em;
   }
 
   .menu {
@@ -286,30 +328,11 @@ strong {
   h1 {
     font-size: 2em;
   }
-
   h2 {
     font-size: 1.6em;
   }
-
   h3 {
     font-size: 1.2em;
-  }
-
-  .datos-personales p,
-  li {
-    font-size: 0.9em;
-  }
-
-  .resumen p {
-    font-size: 0.9em;
-  }
-
-  .menu {
-    justify-content: space-around;
-  }
-
-  .menu li {
-    margin: 5px;
   }
 
   .menu a {
