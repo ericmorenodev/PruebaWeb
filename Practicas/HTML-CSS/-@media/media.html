@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo de @media</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+      }
+
+      h1 {
+        color: darkblue;
+      }
+
+      /* Estilos para móviles */
+      @media (max-width: 600px) {
+        body {
+          background-color: lightblue;
+        }
+        h1 {
+          font-size: 20px;
+        }
+      }
+
+      /* Estilos para tablets */
+      @media (min-width: 601px) and (max-width: 900px) {
+        body {
+          background-color: lightgreen;
+        }
+        h1 {
+          font-size: 30px;
+        }
+      }
+
+      /* Estilos para escritorio */
+      @media (min-width: 901px) {
+        body {
+          background-color: lightcoral;
+        }
+        h1 {
+          font-size: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>¡Hola, mundo!</h1>
+    <p>Este es un ejemplo de cómo usar @media en CSS.</p>
+  </body>
+</html>
